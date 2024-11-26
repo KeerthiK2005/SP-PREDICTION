@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 model=load_model('STP.keras')
 
 st.header("Stock Price Prediction")
-stock=st.text_input("enter stock symbol",'GOOG')
+stock=st.text_input("Enter Stock Symbol",'GOOG')
 start='2010-01-01'
 end='2024-01-01'
 data=yf.download(stock,start,end)
