@@ -25,13 +25,7 @@ pas_100_days=data_train.tail(100)
 data_test=pd.concat([pas_100_days,data_test],ignore_index=True)
 data_test_scale=scaler.fit_transform(data_test)
 
-st.subheader(' PRICE VS Moving AVERAGE 50')
-ma_50_days=data.Close.rolling(50).mean()
-fig1=plt.figure(figsize=(8,6))
-plt.plot(ma_50_days,'r')
-plt.plot(data.Close,'g')
-plt.show()
-st.pyplot(fig1)     
+    
 
 
 st.subheader('Price VS Moving AVERAGE 50 VS Moving AVERAGE 100')
