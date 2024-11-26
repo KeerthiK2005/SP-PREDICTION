@@ -28,10 +28,10 @@ data_test_scale=scaler.fit_transform(data_test)
     
 
 
-st.subheader('Price VS Moving AVERAGE 50 VS Moving AVERAGE 100')
+st.subheader('Price VS Moving AVERAGE 100')
 ma_100_days=data.Close.rolling(100).mean()
 fig2=plt.figure(figsize=(8,6))
-plt.plot(ma_50_days,'r')
+
 plt.plot(ma_100_days,'b')
 plt.plot(data.Close,'g')
 plt.show()
