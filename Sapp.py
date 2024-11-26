@@ -6,7 +6,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 model=load_model('STP.keras')
 
-st.header("stock price prediction")
+st.header("Stock Price Prediction")
 stock=st.text_input("enter stock symbol",'GOOG')
 start='2010-01-01'
 end='2024-01-01'
